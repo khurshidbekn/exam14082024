@@ -1,0 +1,1 @@
+kubectl expose deployment repo1 --port 80 --target-port 80 -n exam-xurshid

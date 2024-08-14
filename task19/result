@@ -1,0 +1,11 @@
+kubectl get pods -n exam-xurshid
+NAME                            READY   STATUS    RESTARTS   AGE
+flask-task4-66c56695c4-698xn    1/1     Running   0          128m
+frontend-app-6fb9bb9dc8-lj7sx   1/1     Running   0          107m
+nginx1                          1/1     Running   0          137m
+nginx2                          1/1     Running   0          137m
+repo1-19-6fbbd754bf-sdx6c       1/1     Running   0          4s
+repo1-85f49bfdb6-4dp8x          1/1     Running   0          38m
+repo1-85f49bfdb6-xgz96          1/1     Running   0          27m
+repo1-85f49bfdb6-zt4s7          1/1     Running   0          27m
+

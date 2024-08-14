@@ -1,0 +1,2 @@
+ kubectl exec -it -n exam-xurshid nginx1 bash
+curl 10.233.74.105:5000/check-ingress

@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: repo1
+  name: repo1-19
+  namespace: exam-xurshid
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: repo1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: repo1
+    spec:
+      containers:
+      - image: khurshidbek90/repo-1:v1
+        name: repo1
+
+        livenessProbe:
+          httpGet:
+            path: /config
+            port: 80
+
+        env:
+          - name: ENVIRONMENT
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: env
+
+          - name: LOG_LEVEL
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: log_leveI
+
+          - name: GRPC_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: grpc_port 
+
+          - name: POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+
+          - name: CPU
+            valueFrom:
+              resourceFieldRef:
+                containerName: repo1
+                resource: requests.cpu
+
+          - name: MEMORY
+            valueFrom:
+              resourceFieldRef:
+                containerName: repo1
+                resource: requests.memory
+
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+          limits:
+            cpu: "200m"
+            memory: "128Mi"
+
+

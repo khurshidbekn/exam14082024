@@ -1,0 +1,3 @@
+kubectl create -f frontend-app.yaml -n exam-xurshid
+
+kubectl get deployment -n exam-xurshid

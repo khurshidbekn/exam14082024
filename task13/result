@@ -1,0 +1,15 @@
+kubectl get svc -n exam-xurshid
+NAME           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+flask-task4    NodePort    10.233.26.137   <none>        8081:32250/TCP   86m
+frontend-app   NodePort    10.233.25.214   <none>        8081:32384/TCP   64m
+repo1          ClusterIP   10.233.62.233   <none>        80/TCP           3s
+
+
+curl 65.109.137.203
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

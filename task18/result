@@ -1,0 +1,4 @@
+kubectl get limitranges -n exam-xurshid
+NAME              CREATED AT
+resource-limits   2024-08-14T16:57:21Z
+

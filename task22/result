@@ -1,0 +1,2 @@
+curl http://xnamozov.nvrbckdown.uz/config
+{"log_level":"debug","grpc_port":"8080","environment":"development","pod_ip":"10.233.97.149","db_url":""}

@@ -1,0 +1,1 @@
+kubectl port-forward pods/flask-task4-66c56695c4-698xn 80:5000 -n exam-xurshid

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: v1
+  name: flask-task4
+  namespace: exam-xurshid
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: v1
+  template:
+    metadata:
+      labels:
+        app: v1
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app
+        name: flask-task4

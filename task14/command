@@ -1,0 +1,1 @@
+kubectl create -f repo1-ingress.yaml -n exam-xurshid

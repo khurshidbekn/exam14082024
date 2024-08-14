@@ -1,0 +1,6 @@
+kubectl expose deployment flask-task4 --port=8081 --target-port=5000 --type=NodePort -n exam-xurshid
+
+kubectl get svc -n exam-xurshid
+
+curl 65.109.137.203:32250
+

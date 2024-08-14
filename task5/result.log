@@ -1,0 +1,4 @@
+flask-task4   NodePort   10.233.26.137   <none>        8081:32250/TCP   2m53s
+
+{"env":"staging","http_port":"80","string":"Welcome to DevOps Course!"}
+

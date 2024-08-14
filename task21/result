@@ -1,0 +1,4 @@
+kubectl get cronjob -n exam-xurshid
+NAME       SCHEDULE      TIMEZONE   SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+ping-job   */2 * * * *   <none>     False     0        11s             19s
+
